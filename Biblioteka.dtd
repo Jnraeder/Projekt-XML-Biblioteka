@@ -1,32 +1,28 @@
-
 <!ELEMENT Biblioteka (katalog, gatunki)>
-<!ELEMENT katalog (książka+)>
+<!ELEMENT katalog (ksiazka+)>
 <!ELEMENT gatunki (gatunek+)>
 
-<!ELEMENT książka (autor, tytuł, gatunek, cena, wypożyczenia*, opis*)>
-
+<!ELEMENT ksiazka (autor, tytul, cena, wypozyczenia,data_wydania, opis*)>
 <!ELEMENT autor      (#PCDATA)>
-<!ELEMENT tytuł      (#PCDATA)>
-<!ELEMENT gatunek      (#PCDATA)>
+<!ELEMENT tytul      (#PCDATA)>
 <!ELEMENT cena      (#PCDATA)>
-<!ELEMENT wypożyczenia (wypożyczenie*)>
+<!ELEMENT wypozyczenia (wypozyczenie*)>
+<!ELEMENT data_wydania     (#PCDATA)>
 <!ELEMENT opis     (#PCDATA)>
 
-
-<!ELEMENT wypożyczenie (klient, data_wypożyczenia, termin)>
+<!ELEMENT wypozyczenie (klient, data_wypozyczenia, termin)>
 <!ELEMENT klient     (#PCDATA)>
-<!ELEMENT data_wypożyczenia     (#PCDATA)>
+<!ELEMENT data_wypozyczenia     (#PCDATA)>
 <!ELEMENT termin     (#PCDATA)>
 
+<!ELEMENT gatunek (nazwaGatunku)>
+<!ELEMENT nazwaGatunku (#PCDATA)>
 
-<!ATTLIST książka id ID #REQUIRED>
-<!ATTLIST książka typ IDREF #REQUIRED>
-<!ATTLIST książka czyEdukacyjna IDREF (nie|tak) "nie">
+
+<!ATTLIST ksiazka id ID #REQUIRED>
+<!ATTLIST ksiazka typ IDREF #REQUIRED>
+<!ATTLIST ksiazka czyEdukacyjna (nie|tak) "nie">
 
 <!ATTLIST cena jednostkaCeny CDATA #REQUIRED>
 
-<!ATTLIST typKomputera typg ID #REQUIRED>
-
-
-
-
+<!ATTLIST gatunek typg ID #REQUIRED>
