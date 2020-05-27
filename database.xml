@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="database.xsl"?><?xml-stylesheet type="text/css" href="css/database.css" ?>
+<!DOCTYPE Biblioteka SYSTEM "Biblioteka.dtd">
+<Biblioteka>
+    <katalog>
+		<!--Dane są losowo wzięte z internetu-->
+		<książka id="bk101" typ="Computer" czyEdukacyjna="tak">
+		  <autor>Gambardella, Matthew</autor>
+		  <tytuł>XML Developer's Guide</tytuł>
+		  <cena jednostkaCeny="zł">44.95</cena>
+		  <wypożyczenia>
+			<wypożyczenie>
+				<klient>Maria Fraja</klient>
+				<data_wypożyczenia>2020-02-01</data_wypożyczenia>
+				<termin>2020-06-01</termin>
+			</wypożyczenie>
+			<wypożyczenie>
+				<klient>Kamil Tureń</klient>
+				<data_wypożyczenia>2020-03-25</data_wypożyczenia>
+				<termin>2020-07-01</termin>
+			</wypożyczenie>
+		  </wypożyczenia>
+		  <data_wydania>2000-10-01</data_wydania>
+		  <opis>An in-depth look at creating applications 
+		  with XML.</opis>
+	   </książka>
+	   <książka id="bk102" typ="Fantasy" czyEdukacyjna="nie">
+		  <autor>Ralls, Kim</autor>
+		  <tytuł>Midnight Rain</tytuł>
+		  <cena jednostkaCeny="zł">5.95</cena>
+		  <wypożyczenia>
+			<wypożyczenie>
+				<klient>Anna Tureń</klient>
+				<data_wypożyczenia>2020-05-16</data_wypożyczenia>
+				<termin>2020-09-01</termin>
+			</wypożyczenie>
+		  </wypożyczenia>
+		  <data_wydania>2000-12-16</data_wydania>
+	   </książka>
+	   <książka id="bk103" typ="Fantasy" czyEdukacyjna="nie">
+		  <autor>Corets, Eva</autor>
+		  <tytuł>Maeve Ascendant</tytuł>
+		  <cena jednostkaCeny="zł">5.95</cena>
+		  <wypożyczenia>
+		  </wypożyczenia>
+		  <data_wydania>2000-11-17</data_wydania>
+	   </książka>
+	   <książka id="bk104" typ="Fantasy" czyEdukacyjna="nie">
+		  <autor>Corets, Eva</autor>
+		  <tytuł>Oberon's Legacy</tytuł>
+		  <cena jednostkaCeny="zł">5.95</cena>
+		  <wypożyczenia>
+		  </wypożyczenia>
+		  <data_wydania>2001-03-10</data_wydania>
+	   </książka>
+	   <książka id="bk105" typ="Fantasy" czyEdukacyjna="nie">
+		  <autor>Corets, Eva</autor>
+		  <tytuł>The Sundered Grail</tytuł>
+		  <cena jednostkaCeny="zł">5.95</cena>
+		  <wypożyczenia>
+			<wypożyczenie>
+				<klient>Anna Tureń</klient>
+				<data_wypożyczenia>2020-06-27</data_wypożyczenia>
+				<termin>2020-10-01</termin>
+			</wypożyczenie>
+		  </wypożyczenia>
+		  <data_wydania>2001-09-10</data_wydania>
+	   </książka>
+	   <książka id="bk106" typ="Romans" czyEdukacyjna="nie">
+		  <autor>Randall, Cynthia</autor>
+		  <tytuł>Lover Birds</tytuł>
+		  <cena jednostkaCeny="zł">4.95</cena>
+		  <wypożyczenia>
+		  </wypożyczenia>
+		  <data_wydania>2000-09-02</data_wydania>
+	   </książka>
+	   <książka id="bk107" typ="Romans" czyEdukacyjna="nie">
+		  <autor>Thurman, Paula</autor>
+		  <tytuł>Splish Splash</tytuł>
+		  <cena jednostkaCeny="zł">4.95</cena>
+		  <wypożyczenia>
+			<wypożyczenie>
+				<klient>Julia Kowalska</klient>
+				<data_wypożyczenia>2020-04-12</data_wypożyczenia>
+				<termin>2020-08-01</termin>
+			</wypożyczenie>
+		  </wypożyczenia>
+		  <data_wydania>2000-11-02</data_wydania>
+	   </książka>
+	   <książka id="bk108" typ="Horror" czyEdukacyjna="nie">
+		  <autor>Knorr, Stefan</autor>
+		  <tytuł>Creepy Crawlies</tytuł>
+		  <cena jednostkaCeny="zł">4.95</cena>
+		  <wypożyczenia>
+				<klient>Piotr Wojewoda</klient>
+				<data_wypożyczenia>2020-03-02</data_wypożyczenia>
+				<termin>2020-07-01</termin>
+				<klient>Władysław Pierun</klient>
+				<data_wypożyczenia>2020-04-06</data_wypożyczenia>
+				<termin>2020-08-01</termin>
+		  </wypożyczenia>
+		  <data_wydania>2000-12-06</data_wydania>
+	   </książka>
+	   <książka id="bk109" typ="Sci-fi" czyEdukacyjna="nie">
+		  <autor>Kress, Peter</autor>
+		  <tytuł>Paradox Lost</tytuł>
+		  <cena jednostkaCeny="zł">6.95</cena>
+		  <wypożyczenia>
+		  </wypożyczenia>
+		  <data_wydania>2000-11-02</data_wydania>
+	   </książka>
+	   <książka id="bk110" typ="Computer" czyEdukacyjna="tak">
+		  <autor>O'Brien, Tim</autor>
+		  <tytuł>Microsoft .NET: The Programming Bible</tytuł>
+		  <cena jednostkaCeny="zł">36.95</cena>
+		  <wypożyczenia>
+			<wypożyczenie>
+				<klient>Kamil Tureń</klient><!--ten klient wypożyczył dwie książki jednego dnia-->
+				<data_wypożyczenia>2020-03-25</data_wypożyczenia>
+				<termin>2020-07-01</termin>
+			</wypożyczenie>
+		  </wypożyczenia>
+		  <data_wydania>2000-12-09</data_wydania>
+	   </książka>
+    </katalog>
+    <gatunki>
+        <gatunek typg="Sci-fi">
+            <nazwaGatunku>Science Fiction</nazwaGatunku>
+        </gatunek>
+        <gatunek typg="Horror">
+            <nazwaGatunku>Horror</nazwaGatunku>
+		</gatunek>
+        <gatunek typg="Romans">
+            <nazwaGatunku>Romans</nazwaGatunku>
+		</gatunek>
+        <gatunek typg="Fantasy">
+            <nazwaGatunku>Fantasy</nazwaGatunku>
+		</gatunek>
+        <gatunek typg="Computer">
+            <nazwaGatunku>Komputerowy</nazwaGatunku>
+		</gatunek>
+    </gatunki>
+</Biblioteka>
