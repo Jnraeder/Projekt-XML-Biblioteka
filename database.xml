@@ -3,10 +3,11 @@
 <Biblioteka>
     <katalog>
 		<!--Dane są losowo wzięte z internetu-->
-		<ksiazka id="bk1" typ="Computer" czyEdukacyjna="tak">
+		<ksiazka id="bk1" gatunek="Komputerowy" czyEdukacyjna="tak">
 		  <autor>Gambardella, Matthew</autor>
 		  <tytul>XML Developer's Guide</tytul>
-		  <cena jednostkaCeny="zl">44.95</cena>
+		  <cena waluta="zl">44.95</cena>
+		  <dostepnosc>niedostepne</dostepnosc><!--nie wiedziałem jak inaczej napisać że jest nie da sie wypozyczyc-->
 		  <wypozyczenia>
 			<wypozyczenie>
 				<klient>Maria Fraja</klient>
@@ -23,10 +24,12 @@
 		  <opis>An in-depth look at creating applications 
 		  with XML.</opis>
 	   </ksiazka>
-	   <ksiazka id="bk2" typ="Fantasy" czyEdukacyjna="nie">
+	   <ksiazka id="bk2" gatunek="Fantasy" czyEdukacyjna="nie">
 		  <autor>Ralls, Kim</autor>
 		  <tytul>Midnight Rain</tytul>
-		  <cena jednostkaCeny="zl">5.95</cena>
+		  <cena waluta="zl">5.95</cena>
+		  
+		  <dostepnosc>dostepne</dostepnosc>
 		  <wypozyczenia>
 			<wypozyczenie>
 				<klient>Anna Tureń</klient>
@@ -36,26 +39,29 @@
 		  </wypozyczenia>
 		  <data_wydania>2000-12-16</data_wydania>
 	   </ksiazka>
-	   <ksiazka id="bk3" typ="Fantasy" czyEdukacyjna="nie">
+	   <ksiazka id="bk3" gatunek="Fantasy" czyEdukacyjna="nie">
 		  <autor>Corets, Eva</autor>
 		  <tytul>Maeve Ascendant</tytul>
-		  <cena jednostkaCeny="zl">5.95</cena>
+		  <cena waluta="zl">5.95</cena>
+		  <dostepnosc>dostepne</dostepnosc>
 		  <wypozyczenia>
 		  </wypozyczenia>
 		  <data_wydania>2000-11-17</data_wydania>
 	   </ksiazka>
-	   <ksiazka id="bk4" typ="Fantasy" czyEdukacyjna="nie">
+	   <ksiazka id="bk4" gatunek="Fantasy" czyEdukacyjna="nie">
 		  <autor>Corets, Eva</autor>
 		  <tytul>Oberon's Legacy</tytul>
-		  <cena jednostkaCeny="zl">5.95</cena>
+		  <cena waluta="zl">5.95</cena>
+		  <dostepnosc>dostepne</dostepnosc>
 		  <wypozyczenia>
 		  </wypozyczenia>
 		  <data_wydania>2001-03-10</data_wydania>
 	   </ksiazka>
-	   <ksiazka id="bk5" typ="Fantasy" czyEdukacyjna="nie">
+	   <ksiazka id="bk5" gatunek="Fantasy" czyEdukacyjna="nie">
 		  <autor>Corets, Eva</autor>
 		  <tytul>The Sundered Grail</tytul>
-		  <cena jednostkaCeny="zl">5.95</cena>
+		  <cena waluta="zl">5.95</cena>
+		  <dostepnosc>dostepne</dostepnosc>
 		  <wypozyczenia>
 			<wypozyczenie>
 				<klient>Anna Tureń</klient>
@@ -65,18 +71,20 @@
 		  </wypozyczenia>
 		  <data_wydania>2001-09-10</data_wydania>
 	   </ksiazka>
-	   <ksiazka id="bk6" typ="Romans" czyEdukacyjna="nie">
+	   <ksiazka id="bk6" gatunek="Romans" czyEdukacyjna="nie">
 		  <autor>Randall, Cynthia</autor>
 		  <tytul>Lover Birds</tytul>
-		  <cena jednostkaCeny="zl">4.95</cena>
+		  <cena waluta="zl">4.95</cena>
+		  <dostepnosc>dostepne</dostepnosc>
 		  <wypozyczenia>
 		  </wypozyczenia>
 		  <data_wydania>2000-09-02</data_wydania>
 	   </ksiazka>
-	   <ksiazka id="bk7" typ="Romans" czyEdukacyjna="nie">
+	   <ksiazka id="bk7" gatunek="Romans" czyEdukacyjna="nie">
 		  <autor>Thurman, Paula</autor>
 		  <tytul>Splish Splash</tytul>
-		  <cena jednostkaCeny="zl">4.95</cena>
+		  <cena waluta="zl">4.95</cena>
+		  <dostepnosc>dostepne</dostepnosc>
 		  <wypozyczenia>
 			<wypozyczenie>
 				<klient>Julia Kowalska</klient>
@@ -86,10 +94,11 @@
 		  </wypozyczenia>
 		  <data_wydania>2000-11-02</data_wydania>
 	   </ksiazka>
-	   <ksiazka id="bk8" typ="Horror" czyEdukacyjna="nie">
+	   <ksiazka id="bk8" gatunek="Horror" czyEdukacyjna="nie">
 		  <autor>Knorr, Stefan</autor>
 		  <tytul>Creepy Crawlies</tytul>
-		  <cena jednostkaCeny="zl">4.95</cena>
+		  <cena waluta="zl">4.95</cena>
+		  <dostepnosc>niedostepne</dostepnosc>
 		  <wypozyczenia>
 			<wypozyczenie>
 				<klient>Piotr Wojewoda</klient>
@@ -104,18 +113,20 @@
 		  </wypozyczenia>
 		  <data_wydania>2000-12-06</data_wydania>
 	   </ksiazka>
-	   <ksiazka id="bk9" typ="Sci-fi" czyEdukacyjna="nie">
+	   <ksiazka id="bk9" gatunek="Science Fiction" czyEdukacyjna="nie">
 		  <autor>Kress, Peter</autor>
 		  <tytul>Paradox Lost</tytul>
-		  <cena jednostkaCeny="zl">6.95</cena>
+		  <cena waluta="zl">6.95</cena>
+		  <dostepnosc>dostepne</dostepnosc>
 		  <wypozyczenia>
 		  </wypozyczenia>
 		  <data_wydania>2000-11-02</data_wydania>
 	   </ksiazka>
-	   <ksiazka id="bk10" typ="Computer" czyEdukacyjna="tak">
+	   <ksiazka id="bk10" gatunek="Komputerowy" czyEdukacyjna="tak">
 		  <autor>O'Brien, Tim</autor>
 		  <tytul>Microsoft .NET: The Programming Bible</tytul>
-		  <cena jednostkaCeny="zl">36.95</cena>
+		  <cena waluta="zl">36.95</cena>
+		  <dostepnosc>dostepne</dostepnosc>
 		  <wypozyczenia>
 			<wypozyczenie>
 				<klient>Kamil Tureń</klient><!--ten klient wypozyczyl dwie ksiązki jednego dnia-->
@@ -127,7 +138,7 @@
 	   </ksiazka>
     </katalog>
     <gatunki>
-        <gatunek typg="Sci-fi">
+        <gatunek typg="Science Fiction">
             <nazwaGatunku>Science Fiction</nazwaGatunku>
         </gatunek>
         <gatunek typg="Horror">
@@ -139,7 +150,7 @@
         <gatunek typg="Fantasy">
             <nazwaGatunku>Fantasy</nazwaGatunku>
 		</gatunek>
-        <gatunek typg="Computer">
+        <gatunek typg="Komputerowy">
             <nazwaGatunku>Komputerowy</nazwaGatunku>
 		</gatunek>
     </gatunki>

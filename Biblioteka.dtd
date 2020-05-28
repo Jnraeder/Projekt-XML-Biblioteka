@@ -2,7 +2,7 @@
 <!ELEMENT katalog (ksiazka+)>
 <!ELEMENT gatunki (gatunek+)>
 
-<!ELEMENT ksiazka (autor, tytul, cena, wypozyczenia,data_wydania, opis*)>
+<!ELEMENT ksiazka (autor, tytul, cena, dostepnosc, wypozyczenia,data_wydania, opis?)>
 <!ELEMENT autor      (#PCDATA)>
 <!ELEMENT tytul      (#PCDATA)>
 <!ELEMENT cena      (#PCDATA)>
@@ -20,9 +20,9 @@
 
 
 <!ATTLIST ksiazka id ID #REQUIRED>
-<!ATTLIST ksiazka typ IDREF #REQUIRED>
+<!ATTLIST ksiazka gatunek IDREF #REQUIRED>
 <!ATTLIST ksiazka czyEdukacyjna (nie|tak) "nie">
 
-<!ATTLIST cena jednostkaCeny CDATA #REQUIRED>
+<!ATTLIST cena waluta CDATA #REQUIRED>
 
 <!ATTLIST gatunek typg ID #REQUIRED>

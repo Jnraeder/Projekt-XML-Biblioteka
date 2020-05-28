@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+
+
+
+<xsd:simpleType name="autor">
+	<xsd:restriction base="xsd:string"/>
+</xsd:simpleType>
+
+<xsd:simpleType name="tytul">
+	<xsd:restriction base="xsd:string"/>
+</xsd:simpleType>
+
+<xsd:simpleType name="cena-wartosc">
+	<xsd:restriction base="xsd:decimal">
+		<xsd:fractionDigits value="2"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:complexType name="cena">
+<xsd:simpleContent>
+	<xsd:extension base="cena-wartosc">
+	<xsd:attribute ref="waluta"/>
+	</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+
+<xsd:simpleType name="dostepnosc">
+	<xsd:restriction base="xsd:string">
+		<xsd:enumeration value="dostepne"/>
+		<xsd:enumeration value="niedostepne"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+
+<xsd:simpleType name="klient">
+	<xsd:restriction base="xsd:string"/>
+</xsd:simpleType>
+
+<xsd:simpleType name="data_wypozyczenia">
+	<xsd:restriction base="xsd:date"/>
+</xsd:simpleType>
+
+<xsd:simpleType name="termin">
+	<xsd:restriction base="xsd:date"/>
+</xsd:simpleType>
+
+<xsd:simpleType name="data_wydania">
+	<xsd:restriction base="xsd:date"/>
+</xsd:simpleType>
+
+<xsd:simpleType name="opis">
+	<xsd:restriction base="xsd:string"/>
+</xsd:simpleType>
+
+<xsd:complexType name="wypozyczenie">		
+	<xsd:sequence>
+		<xsd:element name="klient" type="klient"/>
+		<xsd:element name="data_wypozyczenia" type="data_wypozyczenia"/>
+		<xsd:element name="termin" type="termin"/>
+	</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="wypozyczenia" >		
+	<xsd:sequence>
+		<xsd:element name="wypozyczenie" type="wypozyczenie" maxOccurs="unbounded" minOccurs="0"/>
+	</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="ksiazka">		
+	<xsd:sequence>
+		<xsd:element name="autor" type="autor"/>
+		<xsd:element name="tytul" type="tytul"/>
+		<xsd:element name="cena" type="cena"/>
+		<xsd:element name="dostepnosc" type="dostepnosc"/>
+		<xsd:element name="wypozyczenia" type="wypozyczenia"/>
+		<xsd:element name="data_wydania" type="data_wydania"/>
+		<xsd:element name="opis" type="opis" maxOccurs="1" minOccurs="0"/>
+	</xsd:sequence>
+    <xsd:attribute ref="id" use="required"/>
+    <xsd:attribute ref="gatunek" use="required"/>
+    <xsd:attribute ref="czyEdukacyjna" use="required"/>
+</xsd:complexType>
+
+<xsd:attribute name="id">
+	<xsd:simpleType>
+		<xsd:restriction base="xsd:string">
+		 	<xsd:pattern value="bk([0-9])+"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:attribute>
+
+<xsd:attribute name="gatunek">
+	<xsd:simpleType>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Science Fiction"/>
+			<xsd:enumeration value="Horror"/>
+			<xsd:enumeration value="Romans"/>
+			<xsd:enumeration value="Fantasy"/>
+			<xsd:enumeration value="Komputerowy"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:attribute>
+
+<xsd:attribute name="czyEdukacyjna">
+	<xsd:simpleType>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="tak"/>
+			<xsd:enumeration value="nie"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:attribute>
+
+<xsd:simpleType name="nazwaGatunku">
+	<xsd:restriction base="xsd:string">
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:complexType name="gatunek">
+	<xsd:sequence>
+		<xsd:element name="nazwaGatunku" type="nazwaGatunku"/>
+	</xsd:sequence>
+	 <xsd:attribute ref="typg"/>
+</xsd:complexType>
+
+<xsd:attribute name="typg">
+	<xsd:simpleType>
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+</xsd:attribute>
+
+
+<xsd:attribute name="waluta">
+	<xsd:simpleType>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="zl" />
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:attribute>
+
+
+
+<xsd:complexType name="katalog" >		
+	<xsd:sequence>
+		<xsd:element name="ksiazka" type="ksiazka" maxOccurs="unbounded"/>
+	</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="gatunki" >		
+	<xsd:sequence>
+		<xsd:element name="gatunek" type="gatunek" maxOccurs="unbounded"/>
+	</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="Biblioteka" >		
+	<xsd:sequence>
+		<xsd:element name="katalog" type="katalog" maxOccurs="1"/>
+		<xsd:element name="gatunki" type="gatunki" maxOccurs="1"/>
+	</xsd:sequence>
+</xsd:complexType>
+
+<xsd:element name="Biblioteka" type="Biblioteka">
+	<xsd:key name="idKey">  
+		<xsd:selector xpath=".//gatunki/gatunek" />  
+		<xsd:field xpath="nazwaGatunku" />  
+	  </xsd:key>  
+	  <xsd:keyref name="idRef" refer="idKey">  
+		<xsd:selector xpath="./katalog/ksiazka" />  
+		<xsd:field xpath="@gatunek" />  
+	  </xsd:keyref>  
+</xsd:element>
+
+
+</xsd:schema>
