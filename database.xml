@@ -6,7 +6,7 @@
 		<ksiazka id="bk1" gatunek="Komputerowy" czyEdukacyjna="tak">
 		  <autor>Gambardella, Matthew</autor>
 		  <tytul>XML Developer's Guide</tytul>
-		  <cena waluta="zl">44.95</cena>
+		  <cena waluta="zl">1.95</cena><!--w sumie cena w bibliotece nie ma sensu, ale już to zrobiłem we wszystkim więc niech zostanie-->
 		  <dostepnosc>niedostepne</dostepnosc><!--nie wiedziałem jak inaczej napisać że jest nie da sie wypozyczyc-->
 		  <wypozyczenia>
 			<wypozyczenie>
@@ -27,8 +27,7 @@
 	   <ksiazka id="bk2" gatunek="Fantasy" czyEdukacyjna="nie">
 		  <autor>Ralls, Kim</autor>
 		  <tytul>Midnight Rain</tytul>
-		  <cena waluta="zl">5.95</cena>
-		  
+		  <cena waluta="zl">4.95</cena>
 		  <dostepnosc>dostepne</dostepnosc>
 		  <wypozyczenia>
 			<wypozyczenie>
@@ -42,7 +41,7 @@
 	   <ksiazka id="bk3" gatunek="Fantasy" czyEdukacyjna="nie">
 		  <autor>Corets, Eva</autor>
 		  <tytul>Maeve Ascendant</tytul>
-		  <cena waluta="zl">5.95</cena>
+		  <cena waluta="zl">4.95</cena>
 		  <dostepnosc>dostepne</dostepnosc>
 		  <wypozyczenia>
 		  </wypozyczenia>
@@ -51,7 +50,7 @@
 	   <ksiazka id="bk4" gatunek="Fantasy" czyEdukacyjna="nie">
 		  <autor>Corets, Eva</autor>
 		  <tytul>Oberon's Legacy</tytul>
-		  <cena waluta="zl">5.95</cena>
+		  <cena waluta="zl">4.95</cena>
 		  <dostepnosc>dostepne</dostepnosc>
 		  <wypozyczenia>
 		  </wypozyczenia>
@@ -60,7 +59,7 @@
 	   <ksiazka id="bk5" gatunek="Fantasy" czyEdukacyjna="nie">
 		  <autor>Corets, Eva</autor>
 		  <tytul>The Sundered Grail</tytul>
-		  <cena waluta="zl">5.95</cena>
+		  <cena waluta="zl">4.95</cena>
 		  <dostepnosc>dostepne</dostepnosc>
 		  <wypozyczenia>
 			<wypozyczenie>
@@ -116,7 +115,7 @@
 	   <ksiazka id="bk9" gatunek="Science Fiction" czyEdukacyjna="nie">
 		  <autor>Kress, Peter</autor>
 		  <tytul>Paradox Lost</tytul>
-		  <cena waluta="zl">6.95</cena>
+		  <cena waluta="zl">4.95</cena>
 		  <dostepnosc>dostepne</dostepnosc>
 		  <wypozyczenia>
 		  </wypozyczenia>
@@ -125,7 +124,7 @@
 	   <ksiazka id="bk10" gatunek="Komputerowy" czyEdukacyjna="tak">
 		  <autor>O'Brien, Tim</autor>
 		  <tytul>Microsoft .NET: The Programming Bible</tytul>
-		  <cena waluta="zl">36.95</cena>
+		  <cena waluta="zl">1.95</cena>
 		  <dostepnosc>dostepne</dostepnosc>
 		  <wypozyczenia>
 			<wypozyczenie>

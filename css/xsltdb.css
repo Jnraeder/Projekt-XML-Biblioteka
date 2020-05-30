@@ -1,0 +1,144 @@
+.title{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.katalog{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3.5rem;
+}
+.ksiazka{
+    margin: 2rem;
+    height: min-content;
+    padding: 1rem 5rem;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #ccffcc;
+    transition: 0.4s;
+    opacity: 0.85;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.ksiazkaNiedostepna{
+    background-color: #ff6666;
+    
+}
+
+.ksiazka:hover{
+    background-color: rgb(102, 255, 153);
+    border-color: rgb(0, 204, 0);
+    opacity: 1;
+    transform: scale(1.01);
+}
+
+.ksiazkaNiedostepna:hover{
+    background-color: rgb(255, 77, 77);
+}
+
+.id::before{
+    content: 'Id: ';
+}
+
+
+
+.gatunek_podpis:before{
+    content: 'gatunek: ';
+}
+.tytul::before{
+    content: 'Tytuł: ';
+}
+
+.cena::before{
+    content: 'Cena wypożyczenia: ';
+    color: #666666;
+}
+.cena{
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.dostepnosc{
+    background-color: rgb(0, 255, 0);
+    font-size: 1.5rem;
+    color: #0d0d0d;
+}
+.niedostepnosc{
+    background-color: rgb(255, 0, 0);
+}
+
+.dostepnosc-kontener{
+    display: block;
+    padding: 0.5rem;
+}
+
+.tytul{
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+.tytulEdukacyjny{
+    background: linear-gradient(300deg, rgba(0, 153, 255,0.5158263134355305) 11%, rgba(0, 204, 255,0.6362744927072391) 35%, rgba(0, 153, 255,0.6782912994299282) 64%, rgba(0, 102, 255,0.6418767336035978) 80%);
+    height: 2rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+
+
+.invisible{
+    display: none;
+    opacity: 0;
+}
+
+
+.wypozyczenia:before{
+    font-size: 1.5rem;
+    content: 'Wypożyczenia: ';
+    color: #666666;
+}
+
+.wypozyczenia{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3.5rem;
+}
+
+
+.wypozyczenie:before{
+    font-size: 1.2rem;
+    content: 'wypożyczenie: ';
+    color: #666666;
+}
+.wypozyczenie{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.klient:before{
+    content: 'klient: ';
+    color: #666666;
+}
+.data_wypozyczenia:before{
+    content: 'data wypożyczenia: ';
+    color: #666666;
+}
+.termin:before{
+    content: 'termin: ';
+    color: #666666;
+}
+
+.gatunekt{
+    margin: auto;
+    text-align: center;
+    padding: 1rem;
+    background-color: #eee;
+    border: 2px #ddd dotted;
+    width: 5rem;
+    border-radius: 10%;
+    box-shadow: 1px 1px 0.5px 0px rgba(0,0,0,0.75);
+}
