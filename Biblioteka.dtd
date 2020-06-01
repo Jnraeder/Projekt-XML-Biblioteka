@@ -6,6 +6,7 @@
 <!ELEMENT autor      (#PCDATA)>
 <!ELEMENT tytul      (#PCDATA)>
 <!ELEMENT cena      (#PCDATA)>
+<!ELEMENT dostepnosc     (#PCDATA)>
 <!ELEMENT wypozyczenia (wypozyczenie*)>
 <!ELEMENT data_wydania     (#PCDATA)>
 <!ELEMENT opis     (#PCDATA)>

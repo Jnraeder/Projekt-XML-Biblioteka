@@ -2,7 +2,7 @@
 <!DOCTYPE Biblioteka SYSTEM "Biblioteka.dtd">
 <Biblioteka>
     <katalog>
-		<!--Dane są losowo wzięte z internetu-->
+		<!--Dane są wzięte z internetu, ale o wiele bardziej złożone niż w oryginale, wzięte sa np. tytuły i autorzy-->
 		<ksiazka id="bk1" gatunek="Komputerowy" czyEdukacyjna="tak">
 		  <autor>Gambardella, Matthew</autor>
 		  <tytul>XML Developer's Guide</tytul>
@@ -112,7 +112,7 @@
 		  </wypozyczenia>
 		  <data_wydania>2000-12-06</data_wydania>
 	   </ksiazka>
-	   <ksiazka id="bk9" gatunek="Science Fiction" czyEdukacyjna="nie">
+	   <ksiazka id="bk9" gatunek="Science-Fiction" czyEdukacyjna="nie">
 		  <autor>Kress, Peter</autor>
 		  <tytul>Paradox Lost</tytul>
 		  <cena waluta="zl">4.95</cena>
@@ -137,8 +137,8 @@
 	   </ksiazka>
     </katalog>
     <gatunki>
-        <gatunek typg="Science Fiction">
-            <nazwaGatunku>Science Fiction</nazwaGatunku>
+        <gatunek typg="Science-Fiction">
+            <nazwaGatunku>Science-Fiction</nazwaGatunku>
         </gatunek>
         <gatunek typg="Horror">
             <nazwaGatunku>Horror</nazwaGatunku>
