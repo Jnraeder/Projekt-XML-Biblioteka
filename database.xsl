@@ -34,6 +34,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 						<div class="dostepnosc niedostepnosc"><xsl:value-of select="dostepnosc"/></div>
 						<div class="cena"><xsl:value-of select="cena"/><xsl:value-of select="cena/@waluta"/></div>
 					</div>
+					<xsl:if test="opis">
+						<div class="opis">
+							<xsl:value-of select="opis"/>
+						</div>
+					</xsl:if>
 					<xsl:if test="wypozyczenia/wypozyczenie">
 						<div class="wypozyczenia">
 							<xsl:apply-templates select="wypozyczenia"/> 
@@ -57,6 +62,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 						<div class="dostepnosc"><xsl:value-of select="dostepnosc"/></div>
 						<div class="cena"><xsl:value-of select="cena"/><xsl:value-of select="cena/@waluta"/></div>
 					</div>
+					<xsl:if test="opis">
+						<div class="opis">
+							<xsl:value-of select="opis"/>
+						</div>
+					</xsl:if>
 					<xsl:if test="wypozyczenia/wypozyczenie">
 						<div class="wypozyczenia">
 							<xsl:apply-templates select="wypozyczenia"/> 
